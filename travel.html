@@ -17,15 +17,11 @@
         <p>Travelling to location...</p>
     </h3>
 
-    <button class = "btn" onclick="redirect();vibratePattern();"> (Simulate Reached) </button> 
+    <button class = "btn" onclick="redirect()"> (Simulate Reached) </button> 
     
     <script>
         function redirect() {
             location.replace("/vibrate.html")
-        }
-
-        function vibratePattern () {
-            navigator.vibrate([1000, 500, 1000, 500, 1000]);
         }
     </script>
 </body>

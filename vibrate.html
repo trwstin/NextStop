@@ -18,10 +18,12 @@
         </p>
     </h3>
 
-    <button class = "btn" onclick="redirect()"> RESET TRIP </button> 
+    <button class = "btn" onclick="redirect()"> RESET TRIP </button>
+
+    <button class = "btn" onclick="vibratePattern()"> (Simulate Vibrations) </button> 
 
     <script>
-        function vibratePattern () {
+        function vibratePattern() {
             navigator.vibrate([1000, 500, 1000, 500, 1000]);
         }
 
