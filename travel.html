@@ -10,18 +10,16 @@
 <body>
     <img src="assets\logo_text.png" alt="Logo" class="logo">
 
-    <div class="Input">
-        <input type="text" placeholder="Postal Code..." name="search" class="Input-text">
-    </div>
-    
-    
-    <button class="btn" onclick="redirect()">START JOURNEY</button>
+    <h3>
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        <p>Travelling to location...</p>
+    </h3>
 
+    <button class = "btn" onclick="redirect()"> (Simulate Reached) </button> 
+    
     <script>
         function redirect() {
-            location.replace("/travel.html")
+            location.replace("/vibrate.html")
         }
     </script>
 </body>
-  
-</html>

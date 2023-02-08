@@ -1,17 +1,30 @@
-<title>The Vibration API</title>
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-<body>
-    <h1> The Vibration API</h1>
-    <button class = "button" onclick="vibrate(1000)"> Vibrate Single </button> 
-    <button class = "button" onclick="vibratePattern()"> Vibrate Pattern </button>
-    
+
+<body onload="vibratePattern()">
+    <img src="assets\logo_text.png" alt="Logo" class="logo">
+
+    <h3>
+        <p class="reached-text">
+            Destination reached! Please alight here :)
+        </p>
+    </h3>
+
+    <button class = "btn" onclick="redirect()"> RESET TRIP </button> 
+
     <script>
-        function vibrate (ms) {
-            navigator.vibrate(ms);
+        function vibratePattern () {
+            navigator.vibrate([1000, 500, 1000, 500, 1000]);
         }
 
-        function vibratePattern () {
-            navigator.vibrate([300, 100, 300, 100, 300]);
+        function redirect() {
+            location.replace("/index.html")
         }
     </script>
 </body>
