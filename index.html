@@ -1,17 +1,19 @@
-<title>The Vibration API</title>
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <link rel="stylesheet" href="styles.css" /> 
+    
+</head>
+
 
 <body>
-    <h1> The Vibration API</h1>
-    <button class = "button" onclick="vibrate(1000)"> Vibrate Single </button> 
-    <button class = "button" onclick="vibratePattern()"> Vibrate Pattern </button>
-    
-    <script>
-        function vibrate (ms) {
-            navigator.vibrate(ms);
-        }
-
-        function vibratePattern () {
-            navigator.vibrate([300, 100, 300, 100, 300]);
-        }
-    </script>
+    <img src="logo_text.png" alt="Logo" width="50%">
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Postal Code..." name="search">
+        
+    </form>
+    <button class="btn">Get Started</button>
 </body>
+  
+</html>
