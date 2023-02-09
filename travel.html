@@ -14,12 +14,16 @@
 
     <h3>
         <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-        <p>Travelling to location...</p>
+        <p id="show-input">Travelling to location...</p>
     </h3>
 
     <button class = "btn" onclick="redirect()"> (Simulate Reached) </button> 
     
     <script>
+        var input = localStorage.getItem('location')
+        document.getElementById('show-input').innerHTML = 'Travelling to ' + input;
+        localStorage.removeItem('location')
+        
         function redirect() {
             location.replace("/vibrate.html")
         }

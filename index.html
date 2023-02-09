@@ -13,7 +13,7 @@
     <img src="assets\logo_text.png" alt="Logo" class="logo">
 
     <div class="Input">
-        <input type="text" placeholder="Postal Code..." name="search" class="Input-text">
+        <input type="text" placeholder="Postal Code..." id='location-input' name="search" class="Input-text">
     </div>
     
     
@@ -21,9 +21,25 @@
 
     <script>
         function redirect() {
-            location.replace("/travel.html")
+            var input = document.getElementById('location-input').value;
+            localStorage.setItem('location', input);
+            location.replace("/travel.html");
         }
+
+        let autocomplete;
+        function initAutocomplete() {
+            autocomplete = new google.maps.places.Autocomplete(
+                document.getElementById('location-input'),
+                {
+                    types:['establishment'],
+                    componentRestrictions: {'country':['SG']},
+                    fields: ['placed_id', 'geometry', 'name']
+                }
+            );
+        }
+
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2q8iY-IOGHbjem0sG4X2CVycs04UYj8&libraries=places&callback=initAutocomplete" async defer></script>
 </body>
   
 </html>
