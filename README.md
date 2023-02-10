@@ -1,4 +1,4 @@
-# GetMeOff
+# NextStop
 A bus alert application focused on improving accessibility for people with disabilities.
 This web app is just a prototype to demonstrate the core features of NextStop.
 
