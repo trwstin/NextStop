@@ -25,5 +25,5 @@ Hack For Good 2023 is the first hackathon for 3/4 of our team, so we are proud t
 ## What we learned
 Apart from the languages used to build the app, we also learned how to use collaborative tools on GitHub and Figma.
 
-## What's next for GetMeOff
+## What's next for NextStop
 Create the mobile application version! 
