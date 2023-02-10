@@ -1,6 +1,6 @@
 # GetMeOff
 A bus alert application focused on improving accessibility for people with disabilities.
-This web app is just a prototype to demonstrate the core features of GetMeOff.
+This web app is just a prototype to demonstrate the core features of NextStop.
 
 ## Problem Statement
 How might we, as a community empower, equip and co-create with persons with disabilities to enable them to access, use, and enjoy places, services, products and/or information, whether physical or virtual, so that persons with disabilities can connect to and be included in the wider community?
